@@ -1,0 +1,87 @@
+                         SUBNETTING
+
+
+~ IP address is like a phone no. assigned to your devices.
+
+~ whenever they connect to network, they are assigned a IP address by your router i.e. private IP address.
+
+~ your IP address might start with 192.168.1.something this is given or selected by your router.
+
+~ the starting numbers act as an address for your street in which your house is located.
+
+~ it means all your devices which are connected to network via that router have same address or numbers in starting.
+
+~ there is a term subnet mask it might start with 255.255.255.something this is responsible for same numbers in starting of your IP address.
+
+~ suppose your smartphone wants to send some data to your pc on same network/router or starting with same numbers it can be sent easily without anyone else’s help.
+
+~ suppose if you want to fetch data from Netflix’s server having IP address 1.2.3.4 your device needs help, and the helper is your router or DEFAULT GATEWAY.
+
+~ now if you want to connect to the Netflix or any other internet service you need a IP different from your private IP. That is only one assigned to your router that is given by your ISP(internet service provider).
+
+~ Because you cannot communicate to internet or other IP addresses than your home with your private IP address. Because you cannot move out of your private IP range without an public IP address assigned to your router by your service provider.
+
+~ Now you might think if only one public IP is assigned to my rouetr how can i access the web with other devices connected to the router as every device needs its unique IP address.
+
+~ Here comes NAT(network address translation) this can be done by your router.
+
+~ So, lets see whats NAT.
+
+~ this means if you access internet by your laptop or mobile or any device connected to the same router the internet sees you as one person with that public IP assigned to your router or network.
+For example:- 
+
+
+
+
+
+
+~ the above are the example of how google sees you and your private IP.
+
+~ UPTO NOW WE WERE DEALING WITH IPV4 NOW ITS TIME FOR IPV6.
+
+~ IPV4: 2^32 ADDRESSES IN TOTAL(that ran out).
+~ IPV6: 2^128 ADDRESSES IN TOTAL.
+
+~ every smartphone has its own public IP address because it behaves like an router.
+
+~ now if we convert our ip address and subnet mask in binary it will look something like a series of 32 times 0’s and 1’s.
+
+
+
+~ Now above you see some collection of 0’s ans 1’s this format of writing numbersis known as binary system.
+
+
+~ Here you see some numbers are completely 1’s these are known as network bits and the remaining are known as host bits.
+
+~ Network bits are not muttable at the first place because they belong to class C from the class table of IP addressing.
+
+~ But the host bits can vary for various devices.
+
+~ If you see how many ip addresses are avilable per network in this class you will get a number of 256(2^8). 
+
+~ This no. 256 is not actually 256. It is 254 that is because the first (Network Address) and the last IP address(Broadcast Address) in each network are reserved for specific purpose.
+
+~ So what if you want more than 254 IP addresses for that particular network you changes the Network bites.
+
+~ That changing of Network bites is known as SUBNETTING.
+
+Below is the example for it.
+
+> If you change one bit of Network bites you will get 512(2^9)-2 = 510 IP addresses for the same network.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
